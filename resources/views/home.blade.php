@@ -13,9 +13,9 @@
                 <div class="pr-4"><strong>22k</strong> followers</div>
                 <div class="pr-4"><strong>20</strong> following</div>
             </div>
-            <div class="pt-4 font-weight-bold">instagram.com</div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, ad, commodi? Quae fuga, iste recusandae incidunt dolore possimus enim odit, eaque ullam perspiciatis, ducimus esse vitae sunt quos omnis voluptatem.</div>
-            <div><a href="#">instagram.com/username</a></div>
+            <div class="pt-4 font-weight-bold">{{ $user->profile->title }}</div>
+            <div>{{ $user->profile->description }}</div>
+            <div><a href="#">{{ $user->profile->url }}</a></div>
         </div>
     </div>
 
