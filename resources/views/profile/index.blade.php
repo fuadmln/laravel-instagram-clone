@@ -9,7 +9,7 @@
         <div class="col-9 pt-5"> <!-- profile info -->
             <div class="d-flex justify-content-between align-items-baseline">
                 <h1>{{ $user->username }}</h1>
-                <a href="">Add new post</a>
+                <a href="/p/create">Add new post</a>
             </div>
             <div class="d-flex">
                 <div class="pr-4"><strong>154</strong> post</div>
@@ -22,21 +22,11 @@
         </div>
 
     <div class="row pt-5"> <!-- post -->
-    <?php $tes = [2,3] ?>
         @foreach($user->posts as $post)
             <div class="col-4">
                 <img src="/storage/{{ $post->image }}" alt="" class="w-100">
             </div>
         @endforeach
-        <div class="col-4">
-            <img src="/img/post1.png" alt="" class="w-100">
-        </div>
-        <div class="col-4">
-            <img src="/img/post2.png" alt="" class="w-100">
-        </div>
-        <div class="col-4">
-            <img src="/img/post3.png" alt="" class="w-100">
-        </div>
     </div>
 
 </div>

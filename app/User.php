@@ -39,7 +39,7 @@ class User extends Authenticatable
 
     public function posts() //posts pake s (plural), bisa punya banyak post
     {
-        return $this->hasMany(Post::class);
+        return $this->hasMany(Post::class)->orderBy('created_at', 'DESC');
     }
 
     public function profile() //profile tanpa s (single), hanya punya 1 relasi
