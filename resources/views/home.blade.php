@@ -7,7 +7,10 @@
             <img src="/img/insta.png" alt="profile img" class="rounded-circle" style="height: 200px">
         </div>
         <div class="col-9 pt-5"> <!-- profile info -->
-            <div><h1>{{ $user->username }}</h1></div>
+            <div class="d-flex justify-content-between align-items-baseline">
+                <h1>{{ $user->username }}</h1>
+                <a href="">Add new post</a>
+            </div>
             <div class="d-flex">
                 <div class="pr-4"><strong>154</strong> post</div>
                 <div class="pr-4"><strong>22k</strong> followers</div>
