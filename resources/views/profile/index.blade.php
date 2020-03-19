@@ -20,9 +20,14 @@
             <div>{{ $user->profile->description }}</div>
             <div><a href="#">{{ $user->profile->url }}</a></div>
         </div>
-    </div>
 
     <div class="row pt-5"> <!-- post -->
+    <?php $tes = [2,3] ?>
+        @foreach($user->posts as $post)
+            <div class="col-4">
+                <img src="/storage/{{ $post->image }}" alt="" class="w-100">
+            </div>
+        @endforeach
         <div class="col-4">
             <img src="/img/post1.png" alt="" class="w-100">
         </div>
