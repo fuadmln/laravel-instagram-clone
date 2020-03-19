@@ -37,7 +37,12 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function profile()
+    public function posts() //posts pake s (plural), bisa punya banyak post
+    {
+        return $this->hasMany(Post::class);
+    }
+
+    public function profile() //profile tanpa s (single), hanya punya 1 relasi
     {
         return $this->hasOne(Profile::class);
     }
